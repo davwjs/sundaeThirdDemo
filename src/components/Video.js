@@ -115,7 +115,7 @@ const Video = () => {
       <VideoWrapper>
         <VideoSlide>
           <VideoSlider>
-            <VideoImage playsinline autoPlay loop muted src={VideoOne} />
+            <VideoImage role="presentation" crossOrigin="anonymous" playsinline preload="auto" autoPlay loop muted tabIndex="-1" src={VideoOne} />
             <VideoContent />
           </VideoSlider>
         </VideoSlide>
