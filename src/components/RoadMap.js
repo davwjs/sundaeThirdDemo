@@ -93,7 +93,7 @@ const RoadMapWrapper = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-    padding: 0 90px;
+    padding: 0 120px;
   }
 `;
 
