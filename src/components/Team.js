@@ -11,14 +11,8 @@ const TeamContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
   padding: 0;
   margin: 0;
-
-  //   @media screen and (max-width: 414px) {
-  //     width: 100%;
-  //     height: 900px;
-  //   }
 `;
 
 const TeamWrapper1 = styled.div`
@@ -27,17 +21,30 @@ const TeamWrapper1 = styled.div`
   grid-template-columns: 1fr;
   align-items: center;
   grid-gap: 36px;
-  padding: 0 50px;
+  padding: 0 550px;
   margin-bottom: 150px;
   justify-content: center;
   width: 100%;
 
-  //   @media screen and (max-width: 414px) {
-  //     grid-template-columns: 1fr;
-  //     grid-gap: 18px;
-  //     padding: 0;
-  //     margin: 0;
-  //   }
+  @media screen and (max-width: 1356px) {
+    padding: 0 450px;
+  }
+
+  @media screen and (max-width: 1156px) {
+    padding: 0 350px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 0 250px;
+  }
+
+  @media screen and (max-width: 755px) {
+    padding: 0 150px;
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 0 50px;
+  }
 `;
 
 const TeamCard1 = styled.div`
@@ -46,7 +53,7 @@ const TeamCard1 = styled.div`
   justify-content: center;
   align-items: center;
   max-height: 340px;
-  width: 400px;
+  width: 100%;
   padding: 30px;
   transition: all 0.2s ease-in-out;
 
@@ -54,11 +61,8 @@ const TeamCard1 = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    width: 300px;
   }
-
-  //   @media screen and (max-width: 414px) {
-  //     width: 375px;
-  //   }
 `;
 
 const TeamIcon1 = styled.img`
@@ -69,12 +73,10 @@ const TeamIcon1 = styled.img`
   margin-bottom: 10px;
   border-radius: 100px;
 
-  //   @media screen and (max-width: 414px) {
-  //     height: 100px;
-  //     width: 100px;
-  //     margin-bottom: 10px;
-  //     border-radius: 100px;
-  //   }
+  @media screen and (max-width: 560px) {
+    height: 150px;
+    width: 150px;
+  }
 `;
 
 const TeamH1 = styled.h1`
@@ -86,9 +88,9 @@ const TeamH1 = styled.h1`
   margin-bottom: 64px;
   text-align: center;
 
-  //   @media screen and (max-width: 414px) {
-  //     font-size: 1.5rem;
-  //   }
+  @media screen and (max-width: 560px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const TeamH2 = styled.h2`
@@ -100,9 +102,9 @@ const TeamH2 = styled.h2`
   color: #fff;
   text-align: center;
 
-  //   @media screen and (max-width: 414px) {
-  //     font-size: 1.2rem;
-  //   }
+  @media screen and (max-width: 560px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const TeamP1 = styled.p`
@@ -115,9 +117,9 @@ const TeamP1 = styled.p`
   margin-bottom: 10px;
   text-align: center;
 
-  //   @media screen and (max-width: 414px) {
-  //     font-size: 1rem;
-  //   }
+  @media screen and (max-width: 560px) {
+    font-size: 1rem;
+  }
 `;
 
 const TeamP2 = styled.p`
@@ -128,9 +130,9 @@ const TeamP2 = styled.p`
   color: #fff;
   text-align: center;
 
-  //   @media screen and (max-width: 414px) {
-  //     font-size: 0.8rem;
-  //   }
+  @media screen and (max-width: 560px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Team = () => {

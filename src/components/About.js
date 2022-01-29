@@ -14,14 +14,6 @@ const Section = styled.section`
   height: 700px;
   padding-bottom: 2rem;
 
-  // @media screen and (max-width: 375px) {
-  //   margin: 0;
-  //   padding: 0;
-  //   margin-top: 100vh;
-  //   width: 100%;
-  //   padding-bottom: 2rem;
-  // }
-
   @media screen and (max-width: 414px) {
     margin: 0;
     padding: 0;
@@ -37,9 +29,13 @@ const Container = styled.div`
   grid-template-rows: 800px;
   padding-bottom: 100px;
 
-  // @media screen and (max-width: 375px) {
-  //   grid-template-columns: 1fr;
-  // }
+  @media screen and (max-width: 755px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 
   @media screen and (max-width: 414px) {
     grid-template-columns: 1fr;
@@ -67,11 +63,6 @@ const ColumnRight = styled.div`
   justify-content: center;
   align-items: flex-start;
 
-  // @media screen and (max-width: 375px) {
-  //   width: 100%;
-  //   order: ${({ reverse }) => (reverse ? 1 : 2)};
-  // }
-
   @media screen and (max-width: 414px) {
     width: 100%;
     order: ${({ reverse }) => (reverse ? 1 : 2)};
@@ -96,15 +87,20 @@ const Header = styled.h1`
   font-size: 3rem;
   font-weight: 600;
 
-  // @media screen and (max-width: 375px) {
-  //   width: 70%;
-  //   height: 70%;
-  // }
+  @media screen and (max-width: 960px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 755px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 1.5rem;
+  }
 
   @media screen and (max-width: 414px) {
-    width: 70%;
-    height: 70%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -114,12 +110,23 @@ const Paragraph = styled.p`
   font-size: 18px;
   line-height: 1.5;
 
-  // @media screen and (max-width: 375px) {
-  //   font-size: 1rem;
-  // }
+  @media screen and (max-width: 960px) {
+    font-size: 0.8rem;
+
+  }
+
+  @media screen and (max-width: 755px) {
+    font-size: 0.8rem;
+
+  }
+
+  @media screen and (max-width: 560px) {
+    font-size: 0.8rem;
+
+  }
 
   @media screen and (max-width: 414px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 

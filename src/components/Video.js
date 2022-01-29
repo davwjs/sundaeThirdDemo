@@ -13,28 +13,34 @@ const VideoSection = styled.section`
   overflow: hidden;
   display: flex;
 
-  // @media screen and (max-width: 375px) {
-  //   object-fit: cover;
-  //   top: 0;
-  //   margin: 0;
-  //   padding: 0;
-  //   width: 100%;
-  //   height: 80vh;
-  //   position: absolute;
-  //   overflow: hidden;
-  //   display: flex;
-  // }
+  @media screen and (max-width: 1356px) {
+    object-fit: cover;
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 1156px) {
+    object-fit: cover;
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 960px) {
+    object-fit: cover;
+    height: 90vh;
+  }
+
+  @media screen and (max-width: 755px) {
+    object-fit: cover;
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 560px) {
+    object-fit: cover;
+    height: 100vh;
+  }
 
   @media screen and (max-width: 414px) {
     object-fit: cover;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 80vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
+    height: 100vh;
   }
 `;
 
@@ -109,7 +115,7 @@ const Video = () => {
       <VideoWrapper>
         <VideoSlide>
           <VideoSlider>
-            <VideoImage autoPlay loop muted src={VideoOne} />
+            <VideoImage playsinline autoPlay loop muted src={VideoOne} />
             <VideoContent />
           </VideoSlider>
         </VideoSlide>

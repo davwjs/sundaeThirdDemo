@@ -5,7 +5,7 @@ import ImageTwo from "../images/road2.png";
 import ImageThree from "../images/road3.png";
 
 const RoadMapContainer = styled.div`
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;

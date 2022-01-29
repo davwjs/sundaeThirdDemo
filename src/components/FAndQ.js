@@ -11,7 +11,7 @@ const SectionWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  postion: relative;
+  postion: flex;
   color: #fff;
   font-weight: 600;
   font-size: 2rem;
@@ -21,28 +21,26 @@ const Section = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  postion: relative;
+  postion: flex;
   height: 100vh;
   //   box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
 `;
 
 const Conatiner = styled.div`
   width: 100%;
-  positon: absolute;
+  positon: flex;
   top: 30%;
 `;
 
 const Wrap = styled.div`
+  padding: 0 550px;
   color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  text-align: center;
+  text-align: start;
   cursor: pointer;
-
   h1 {
     padding: 2rem;
     font-size: 2rem;
@@ -50,6 +48,36 @@ const Wrap = styled.div`
 
   span {
     margin-right: 1.5rem;
+  }
+
+  @media screen and (max-width: 1356px) {
+    padding: 0 450px;
+  }
+
+  @media screen and (max-width: 1156px) {
+    padding: 0 350px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 0 250px;
+  }
+
+  @media screen and (max-width: 755px) {
+    padding: 0 150px;
+
+    h1 {
+      padding: 1.8rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 0 50px;
+
+    h1 {
+      padding: 1.6rem;
+      font-size: 1.6rem;
+    }
   }
 `;
 
@@ -68,6 +96,18 @@ const Dropdown = styled.div`
   p {
     font-size: 2rem;
   }
+
+  @media screen and (max-width: 755px) {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    p {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 const FAndQ = () => {
@@ -80,7 +120,7 @@ const FAndQ = () => {
     setClicked(index);
   };
   return (
-    <IconContext.Provider value={{ color: "#fff", size: "25px"}}>
+    <IconContext.Provider value={{ color: "#fff", size: "25px" }}>
       <SectionWrapper>
         F & Q
         <Section>
